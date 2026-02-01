@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+  background: linear-gradient(135deg, #fde2e4, #eae4ff);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  overflow: hidden;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 32px;
+  border-radius: 28px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  animation: float 4s ease-in-out infinite;
+  z-index: 2;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+.hidden {
+  display: none;
+}
+
+h2 {
+  color: #5e548e;
+  line-height: 1.5;
+}
+
+button {
+  padding: 10px 28px;
+  border-radius: 30px;
+  border: none;
+  margin-top: 22px;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#continueBtn,
+#yes {
+  background: linear-gradient(135deg, #ffafcc, #ffc8dd);
+  color: #4a4a4a;
+}
+
+#no {
+  background-color: #f1f1f1;
+  color: #777;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
